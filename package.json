@@ -1,0 +1,25 @@
+{
+    "name": "fsweb-s14d2-ornek-proje",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node index.js",
+        "server": "nodemon index.js",
+        "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run",
+        "gitreset": "git fetch && git reset --hard origin/main"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Workintech/fsweb-s14d2-ornek-proje.git"
+    },
+    "devDependencies": {
+        "eslint": "^8.11.0",
+        "knex-cleaner": "^1.3.1",
+        "nodemon": "^2.0.15"
+    },
+    "dependencies": {
+        "express": "^4.17.3",
+        "knex": "^2.0.0",
+        "morgan": "^1.10.0",
+        "sqlite3": "^5.0.8"
+    }
+}
